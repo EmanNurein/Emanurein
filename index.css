@@ -9,33 +9,23 @@ header{
 }
 .navbar-expand-lg{
     height: 60px;
+    
 }
 
 .navbar-brand{
     font-size: 17px;
 }
+
 a{ 
     text-decoration: none;
     font-size: 18px;
-    color: black;
+    color: blanchedalmond;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 
 .nav-link{
     color:blanchedalmond;
 }
-
-/*.navbar-brand > img{
-    width: 50%;
-    height:50px;
-    display: inline-block;   
-}*/
-.slogo{
-    height: 50px;
-    width: 50px;
-}
-
 
 #icon{
     float: left;
@@ -46,23 +36,59 @@ a{
 }
 
 #search{
-    height: 405px;
+    height: 500px;
     /*border: 2px solid orange;*/
-    /*background-image: url('./images/pharmacy\ shutterstoc.jpg');*/
     background-repeat: no-repeat;
     /*background-size: cover;*/
     background-size: 100% 400px;
+    margin-top: 2%;
 }
 
 .carousel-item >img{
-    height: 400px !important;
+    height: 495px !important;
     margin-left: 0%;
 }
+.gallery{
+    margin: 6px;
+    /*border: 1px solid rgb(230, 95, 95);*/
+    float: left;
+    width: 340px;
+    margin-left: 6%;
+    margin-top: 2%;
+    border: none;
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 5%;
+    border-radius: 50%;
+    animation:dance 10s infinite
+}
+@keyframes dance {
+    0% {transform:rotate(-5deg);}
+    25% {transform:rotate(0deg);}
+    50% {transform:rotate(5deg);}
+    60% {transform: scale(1.1);}
+    75% {transform:rotate(0deg);}
+    100% {transform:rotate(-5deg);}
+}
+  
+.desc {
+    padding: 30px;
+    text-align: center;
+    color: black;
+  }
 
 #AboutUs{
     height: 450px;
     /*border: 2px solid rgb(170, 19, 52);*/
-   
+    margin-top: -1%;
+    background-color: #f6f9fc;
 }
 
 
@@ -71,14 +97,22 @@ h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-style:italic;
-    margin-top: 2%;
+    margin-top: 4%;
     color: blue;
 }
 
+h2{
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 5%;
+    font-style: italic;
+    color: blue;
+}
 p{
     text-align: center;
     margin-left: 5%;
-    margin-top:7%;
+    margin-top:10%;
     margin-right: 5%;
     font-size: 17px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -89,26 +123,33 @@ h5{
     text-align: center;
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: black;
-    margin-top: 10%;
+    color: lightgoldenrodyellow;
+    margin-top: 11%;
 }
-.fw-bold{
-    margin-top: -1%;
-    
-}
+
 img{
     margin-right: 2%;
-    margin-top: 0%;
+    margin-top: 1%;
     margin-left: -35%;
+    border-radius: 50%;    
 }
 
 .card{
     color:black;
-    float: right;
-    margin-top: 2%;
-    width: 90%;
+    float: left;
+    margin-top: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
+    margin-left: 12%;
+    height:400px;
+    width:30%;
+    border: none;
+    
+}
+
+#main{
+    width: 100%;
+    display: inline-block;
 }
 .card-title{
     text-align: center;
@@ -130,52 +171,71 @@ li{
 }
 
 #ChooseUs{
-    height: 800px;
+    height: 555px;
     /*border: 2px solid blueviolet;*/
 }
 
 .btn-proceed{
-    margin-left: -60%;
-    margin-top: 50%;
+    margin-left: 19%;
+    margin-top: 7%;
+    border: 1px solid blue;
+    background-color:rgb(238, 229, 229); 
 }
-.btn{
-    margin-right: 16%;
-    
+.btn-proceed:hover{
+    background-color: rgb(215, 226, 236);  
 }
 
+.btn{
+    margin-right: 16%;  
+}
+
+.btn > a{
+    color: black; 
+}
+
+ #Activity{
+    height: 600px;
+    /*border: 2px solid rgb(221, 34, 34);*/
+ }
 
 #Products{
-    height: 284px;
+    height: 389px;
     /*border: 2px solid lightcoral;*/
-    background-color: #e2e3e5;
+    /*background-color: #e2e3e5;*/
 }
 
 .table{
-    width: 100%; 
+    width: 90%; 
     text-align: center; 
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1%;
+    margin-top: 5%;
     font-size: 17px;
     
 }
 thead{
     height: 40px;
     color: blue;
+    background-color: whitesmoke
 }
 
  td{
      font-size:medium;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ td >a{
+     color: blue;
  }
 
-.card> img{
-    height: 400px; 
-    margin-top: 0%;
 
+.card> img{
+    height: 300px; 
+    margin-left: 1%
 }
 
 .container{
     width: 50%;
+    margin-top: 2%;
     
 }
 
@@ -213,11 +273,24 @@ p{
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
   
-
-
-
 footer{
-    height: 150px;
+    height: 90px;
    /* border: 2px solid lightseagreen;*/
 }
+
+.footer-menu{
+    float: left ;
+    margin-top: 5%;
+    position: relative;
+    margin-left: -10%;
+}
+.footer-menu a{
+    color: black;
+    padding: 9px;
+    text-decoration: none;
+  }
+  .footer-menu a:hover{
+    color: blue;
+  }
+  
 
